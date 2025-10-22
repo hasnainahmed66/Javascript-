@@ -129,19 +129,87 @@
 
 
 
-let language = prompt("Enter the programming language:","javascript");
+// let language = prompt("Enter the programming language:","javascript");
 // let expirence = prompt("Enter your years of experience: ","2");
 
 
-if(language == "javascript") {
-    let locat = prompt("Enter your location:","pakistan");
+// if(language == "javascript") {
+//     let locat = prompt("Enter your location:","pakistan");
 
-}
+// }
 
 
-if(language == "javascript" && locat == "pakistan" && expirence >= 2) {
-    console.log("You are eligible for the job.");
+// if(language == "javascript" && locat == "pakistan" && expirence >= 2) {
+//     console.log("You are eligible for the job.");
+// } 
+// else {
+//     console.log("You are not eligible for the job.");
+// }
+
+
+
+// let hour = 10;
+
+// if (hour < 1) {
+//   console.log("Good morning");
+// } else {
+//   console.log("Good afternoon");
+// }
+// Execution: hour < 12 ? true -> "Good morning"
+
+// if (2 < 5) { // se chhota hai
+//   console.log("2 chhota hai 5 se");
+// }
+
+// let marks = prompt("Enter your marks: ");
+
+// if (marks >= 90) { // se bada ya barabar
+//   console.log("A+");
+// } else if (marks >= 75) {
+//   console.log("A");
+// } else if (marks >= 60) {
+//   console.log("B");
+// } else if (marks >= 50) {
+//   console.log("Fail");
+// }
+
+
+    // even odd program
+
+// let number = prompt("Enter a number:");
+
+// if (number % 2 === 0) {
+//   console.log("The number is Even");
+// } else {
+//   console.log("The number is Odd");
+// }
+
+
+
+let num1 = Number(prompt("Enter first number:"));
+let num2 = Number(prompt("Enter second number:"));
+let operation = prompt("Enter operation (+, -, *, /, %):");
+
+let result;
+
+if (operation === "+") {
+  result = num1 + num2;
+} 
+else if (operation === "-") {
+  result = num1 - num2;
+} 
+else if (operation === "*") {
+  result = num1 * num2;
+} 
+else if (operation === "/") {
+  result = num1 / num2;
+} 
+else if (operation === "%") {
+  result = num1 % num2;
 } 
 else {
-    console.log("You are not eligible for the job.");
+  result = "Invalid operation!";
 }
+
+console.log("Result: " + result);
+alert("Result: " + result);
