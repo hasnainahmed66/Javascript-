@@ -61,3 +61,63 @@ function countNumbers(start, end) {
   }
 }
 countNumbers(1, 10);
+
+//Question 8
+function power(a, b) {
+    if (b === 0) {
+        return 1;
+    }
+    
+    let result = 1;
+    for (let i = 0; i < b; i++) {
+        result *= a;
+    }
+    return result;
+}
+console.log(power(2, 3));
+
+//Question 9
+function calculateAreaOfCircle(radius) {
+  return Math.PI * radius * radius;
+}
+console.log(calculateAreaOfCircle(5));
+//Question 10
+function checkPalindrome(str) {
+  const cleanedStr = str.replace(/[^A-Za-z0-9]/g, '').toLowerCase();
+  const reversedStr = cleanedStr.split('').reverse().join('');
+  return cleanedStr === reversedStr;
+}
+console.log(checkPalindrome("A man, a plan, a canal: Panama"));
+
+//Question 11 
+function convertToTitleCase(str) {
+  const words = str.split(' ');
+  for (let i = 0; i < words.length; i++) {
+    words[i] = words[i].charAt(0).toUpperCase() + words[i].slice(1).toLowerCase();
+  }
+  return words.join(' ');
+}
+console.log(convertToTitleCase("hello world from javascript"));
+//Question 12
+function findLongestWord(str) {
+  const words = str.split(' ');
+  let longestWord = '';
+  for (let word of words) {
+    if (word.length > longestWord.length) {
+      longestWord = word;
+    }
+  }
+  return longestWord;
+}
+console.log(findLongestWord("The quick brown fox jumped over the lazy dog"));
+//Question 13
+function countOccurrences(str, letter) {
+  let count = 0;
+  for (let char of str) {
+    if (char === letter) {
+      count++;
+    }
+  }
+  return count;
+} 
+console.log(countOccurrences("hello world", "o"));
